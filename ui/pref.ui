@@ -1,0 +1,1666 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>685</width>
+    <height>350</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>685</width>
+    <height>350</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>685</width>
+    <height>350</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>User Preferences</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <widget class="QFrame" name="frame">
+     <property name="minimumSize">
+      <size>
+       <width>111</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>111</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <item>
+         <spacer name="verticalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Expanding</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="hLayout_gen">
+          <property name="sizeConstraint">
+           <enum>QLayout::SetDefaultConstraint</enum>
+          </property>
+          <item>
+           <widget class="QLabel" name="lbl_nav_gen">
+            <property name="minimumSize">
+             <size>
+              <width>6</width>
+              <height>24</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>6</width>
+              <height>24</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color:#4E5764;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>24</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_nav_gen">
+            <property name="minimumSize">
+             <size>
+              <width>75</width>
+              <height>23</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>75</width>
+              <height>23</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-style:None;
+text-align: left center;</string>
+            </property>
+            <property name="text">
+             <string>General</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="hLayout_ui">
+          <property name="sizeConstraint">
+           <enum>QLayout::SetMaximumSize</enum>
+          </property>
+          <item>
+           <widget class="QLabel" name="lbl_nav_ui">
+            <property name="minimumSize">
+             <size>
+              <width>6</width>
+              <height>24</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>6</width>
+              <height>24</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color:#4E5764;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>24</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_nav_ui">
+            <property name="minimumSize">
+             <size>
+              <width>75</width>
+              <height>23</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>75</width>
+              <height>23</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-style:None;
+text-align: left center;</string>
+            </property>
+            <property name="text">
+             <string>User Interface</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="hLayout_directories">
+          <item>
+           <widget class="QLabel" name="lbl_nav_directories">
+            <property name="minimumSize">
+             <size>
+              <width>6</width>
+              <height>24</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>6</width>
+              <height>24</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color:#4E5764;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_3">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>24</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_nav_directories">
+            <property name="minimumSize">
+             <size>
+              <width>75</width>
+              <height>23</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>75</width>
+              <height>23</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-style:None;
+text-align: left center;</string>
+            </property>
+            <property name="text">
+             <string>Directories</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="hLayout_browser">
+          <item>
+           <widget class="QLabel" name="lbl_nav_browser">
+            <property name="minimumSize">
+             <size>
+              <width>6</width>
+              <height>24</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>6</width>
+              <height>24</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color:#4E5764;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_4">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Expanding</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>24</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_nav_browser">
+            <property name="minimumSize">
+             <size>
+              <width>75</width>
+              <height>23</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>75</width>
+              <height>23</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-style:None;
+text-align: left center;</string>
+            </property>
+            <property name="text">
+             <string>Browser</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="hLayout_network">
+          <item>
+           <widget class="QLabel" name="lbl_nav_network">
+            <property name="minimumSize">
+             <size>
+              <width>6</width>
+              <height>24</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>6</width>
+              <height>24</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color:#4E5764;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_5">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>24</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_nav_network">
+            <property name="minimumSize">
+             <size>
+              <width>75</width>
+              <height>23</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>75</width>
+              <height>23</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-style:None;
+text-align: left center;</string>
+            </property>
+            <property name="text">
+             <string>Network</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_4">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Expanding</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="minimumSize">
+      <size>
+       <width>250</width>
+       <height>200</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>550</height>
+      </size>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <property name="sizeAdjustPolicy">
+      <enum>QAbstractScrollArea::AdjustToContentsOnFirstShow</enum>
+     </property>
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>-764</y>
+        <width>533</width>
+        <height>1470</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>520</width>
+        <height>1470</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>1000</height>
+       </size>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <item>
+        <widget class="QWidget" name="widget" native="true">
+         <property name="minimumSize">
+          <size>
+           <width>520</width>
+           <height>1470</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>500</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_8">
+          <item>
+           <widget class="QGroupBox" name="group_General">
+            <property name="minimumSize">
+             <size>
+              <width>300</width>
+              <height>250</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>250</height>
+             </size>
+            </property>
+            <property name="title">
+             <string>General</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_4">
+             <item>
+              <widget class="QGroupBox" name="groupBox_4">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>90</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>90</height>
+                </size>
+               </property>
+               <property name="title">
+                <string>Windows Integration</string>
+               </property>
+               <widget class="QCheckBox" name="chbx_start_at_boot">
+                <property name="geometry">
+                 <rect>
+                  <x>20</x>
+                  <y>30</y>
+                  <width>161</width>
+                  <height>17</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>Start when Windows starts</string>
+                </property>
+               </widget>
+               <widget class="QCheckBox" name="chbx_start_mini">
+                <property name="geometry">
+                 <rect>
+                  <x>60</x>
+                  <y>50</y>
+                  <width>101</width>
+                  <height>17</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>Start minimized</string>
+                </property>
+               </widget>
+              </widget>
+             </item>
+             <item>
+              <widget class="QGroupBox" name="groupBox_5">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>90</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>90</height>
+                </size>
+               </property>
+               <property name="title">
+                <string>Notifications</string>
+               </property>
+               <widget class="QCheckBox" name="chbx_enable_notifications">
+                <property name="geometry">
+                 <rect>
+                  <x>20</x>
+                  <y>30</y>
+                  <width>321</width>
+                  <height>17</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>Notify me of completed downloads via Notification Center</string>
+                </property>
+               </widget>
+               <widget class="QCheckBox" name="chbx_notify_only_inactive">
+                <property name="geometry">
+                 <rect>
+                  <x>50</x>
+                  <y>60</y>
+                  <width>151</width>
+                  <height>17</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>Only when QDM is inactive</string>
+                </property>
+               </widget>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="group_UI">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>250</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>300</height>
+             </size>
+            </property>
+            <property name="title">
+             <string>User Interface</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_7">
+             <item>
+              <widget class="QGroupBox" name="groupBox">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>90</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>90</height>
+                </size>
+               </property>
+               <property name="title">
+                <string>Display Options</string>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_6">
+                <item>
+                 <widget class="QCheckBox" name="chbx_confirm_delete">
+                  <property name="text">
+                   <string>Confirm when deleting downloads</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="chbx_confirm_exit">
+                  <property name="text">
+                   <string>Confirm dialog on exit</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QGroupBox" name="groupBox_2">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>75</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>75</height>
+                </size>
+               </property>
+               <property name="title">
+                <string>System Tray</string>
+               </property>
+               <widget class="QCheckBox" name="chbx_minimize_minimizes">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>40</y>
+                  <width>251</width>
+                  <height>17</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>Minimize button minimizes window to tray</string>
+                </property>
+               </widget>
+               <widget class="QCheckBox" name="chbx_close_minimizes">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>20</y>
+                  <width>201</width>
+                  <height>17</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>Close button minimizes window to tray</string>
+                </property>
+               </widget>
+               <widget class="QCheckBox" name="chbx_on_tray_clicked">
+                <property name="geometry">
+                 <rect>
+                  <x>260</x>
+                  <y>20</y>
+                  <width>201</width>
+                  <height>17</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>Always restore window when clicked</string>
+                </property>
+               </widget>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="group_directories">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>330</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>330</height>
+             </size>
+            </property>
+            <property name="title">
+             <string>Directories</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_9">
+             <item>
+              <widget class="QGroupBox" name="groupBox_6">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>200</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>200</height>
+                </size>
+               </property>
+               <property name="title">
+                <string>Output Directories</string>
+               </property>
+               <widget class="QComboBox" name="combo_categories">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>50</y>
+                  <width>161</width>
+                  <height>22</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QComboBox {
+    border: 1px solid gray;
+    border-radius: 3px;
+    padding: 1px 18px 1px 3px;
+    min-width: 6em;
+}
+
+QComboBox:editable {
+    background: white;
+}
+
+QComboBox:!editable, QComboBox::drop-down:editable {
+     background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0 #E1E1E1, stop: 0.4 #DDDDDD,
+                                 stop: 0.5 #D8D8D8, stop: 1.0 #D3D3D3);
+}
+
+/* QComboBox gets the &quot;on&quot; state when the popup is open */
+QComboBox:!editable:on, QComboBox::drop-down:editable:on {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #D3D3D3, stop: 0.4 #D8D8D8,
+                                stop: 0.5 #DDDDDD, stop: 1.0 #E1E1E1);
+}
+
+QComboBox:on { /* shift the text when the popup opens */
+    padding-top: 3px;
+    padding-left: 4px;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+
+    border-left-width: 1px;
+    border-left-color: darkgray;
+    border-left-style: solid; /* just a single line */
+    border-top-right-radius: 3px; /* same radius as the QComboBox */
+    border-bottom-right-radius: 3px;
+}
+
+QComboBox::down-arrow {
+    image: url(/usr/share/icons/crystalsvg/16x16/actions/1downarrow.png);
+}
+
+QComboBox::down-arrow:on { /* shift the arrow when popup is open */
+    top: 1px;
+    left: 1px;
+}</string>
+                </property>
+               </widget>
+               <widget class="QPushButton" name="btn_add_category">
+                <property name="geometry">
+                 <rect>
+                  <x>180</x>
+                  <y>51</y>
+                  <width>21</width>
+                  <height>20</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">border-image:url(./imgs/add_green.png);
+border: solid green 2px;</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+               <widget class="QPushButton" name="btn_del_category">
+                <property name="geometry">
+                 <rect>
+                  <x>210</x>
+                  <y>50</y>
+                  <width>21</width>
+                  <height>23</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">border-image:url(./imgs/minus_red.png);</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>90</y>
+                  <width>141</width>
+                  <height>16</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>Associated Extensions</string>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_3">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>30</y>
+                  <width>47</width>
+                  <height>13</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>Category</string>
+                </property>
+               </widget>
+               <widget class="QLineEdit" name="edit_extensions">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>110</y>
+                  <width>461</width>
+                  <height>20</height>
+                 </rect>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_4">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>140</y>
+                  <width>61</width>
+                  <height>16</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>Path</string>
+                </property>
+               </widget>
+               <widget class="QLineEdit" name="edit_category_path">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>160</y>
+                  <width>421</width>
+                  <height>20</height>
+                 </rect>
+                </property>
+                <property name="readOnly">
+                 <bool>true</bool>
+                </property>
+               </widget>
+               <widget class="QPushButton" name="btn_browse_category_path">
+                <property name="geometry">
+                 <rect>
+                  <x>440</x>
+                  <y>160</y>
+                  <width>31</width>
+                  <height>23</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>...</string>
+                </property>
+               </widget>
+              </widget>
+             </item>
+             <item>
+              <widget class="QGroupBox" name="groupBox_7">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>60</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>70</height>
+                </size>
+               </property>
+               <property name="title">
+                <string>Temporary Directory</string>
+               </property>
+               <widget class="QPushButton" name="btn_browse_temp_dir">
+                <property name="geometry">
+                 <rect>
+                  <x>440</x>
+                  <y>30</y>
+                  <width>31</width>
+                  <height>23</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>...</string>
+                </property>
+               </widget>
+               <widget class="QLineEdit" name="edit_temp_dir">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>30</y>
+                  <width>421</width>
+                  <height>20</height>
+                 </rect>
+                </property>
+                <property name="readOnly">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="group_browser">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>530</width>
+              <height>300</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>500</width>
+              <height>300</height>
+             </size>
+            </property>
+            <property name="title">
+             <string>Browser Integration</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_12">
+             <item>
+              <widget class="QGroupBox" name="groupBox_9">
+               <property name="minimumSize">
+                <size>
+                 <width>490</width>
+                 <height>120</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>490</width>
+                 <height>120</height>
+                </size>
+               </property>
+               <property name="title">
+                <string>Browsers</string>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_11">
+                <item>
+                 <widget class="QCheckBox" name="chbx_chrome">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
+                  <property name="text">
+                   <string>Chrome</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="chbx_firefox">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
+                  <property name="text">
+                   <string>Firefox</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="chbx_edge">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
+                  <property name="text">
+                   <string>Edge</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="chbx_opera">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
+                  <property name="text">
+                   <string>Opera</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QGroupBox" name="groupBox_10">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>490</width>
+                 <height>130</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>490</width>
+                 <height>130</height>
+                </size>
+               </property>
+               <property name="title">
+                <string>Configuration</string>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_10">
+                <item>
+                 <widget class="QCheckBox" name="chbx_auto_start_browser_files">
+                  <property name="text">
+                   <string>Automatically start downloads without confirmation</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_5">
+                  <property name="text">
+                   <string>Using Alt Key</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QRadioButton" name="rbtn_alt_no_catch">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string>Don't catch downloads when Alt key is pressed</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QRadioButton" name="rbtn_alt_catch">
+                  <property name="text">
+                   <string>Only catch downloads when Alt key is pressed</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+               <zorder>chbx_auto_start_browser_files</zorder>
+               <zorder>label_5</zorder>
+               <zorder>rbtn_alt_catch</zorder>
+               <zorder>rbtn_alt_no_catch</zorder>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="group_network">
+            <property name="minimumSize">
+             <size>
+              <width>510</width>
+              <height>300</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>510</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="title">
+             <string>Network</string>
+            </property>
+            <widget class="QGroupBox" name="groupBox_12">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>30</y>
+               <width>491</width>
+               <height>241</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>490</width>
+               <height>240</height>
+              </size>
+             </property>
+             <property name="title">
+              <string>Proxy</string>
+             </property>
+             <widget class="QRadioButton" name="rbtn_system_proxy">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>20</y>
+                <width>111</width>
+                <height>21</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>Use system proxy</string>
+              </property>
+              <property name="checked">
+               <bool>true</bool>
+              </property>
+             </widget>
+             <widget class="QRadioButton" name="rbtn_no_proxy">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>50</y>
+                <width>82</width>
+                <height>17</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>No proxy</string>
+              </property>
+             </widget>
+             <widget class="QRadioButton" name="rbtn_manual_proxy">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>80</y>
+                <width>131</width>
+                <height>17</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>Manual configuration</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_2">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>130</y>
+                <width>47</width>
+                <height>13</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>HTTP</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_6">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>160</y>
+                <width>47</width>
+                <height>13</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>HTTPS</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_7">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>190</y>
+                <width>47</width>
+                <height>13</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>FTP</string>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="edit_http_address">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="geometry">
+               <rect>
+                <x>60</x>
+                <y>130</y>
+                <width>113</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="clearButtonEnabled">
+               <bool>false</bool>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="edit_http_port">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="geometry">
+               <rect>
+                <x>180</x>
+                <y>130</y>
+                <width>61</width>
+                <height>20</height>
+               </rect>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="edit_http_password">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="geometry">
+               <rect>
+                <x>370</x>
+                <y>130</y>
+                <width>113</width>
+                <height>20</height>
+               </rect>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="edit_http_user">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="geometry">
+               <rect>
+                <x>250</x>
+                <y>130</y>
+                <width>113</width>
+                <height>20</height>
+               </rect>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="edit_https_address">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="geometry">
+               <rect>
+                <x>60</x>
+                <y>160</y>
+                <width>113</width>
+                <height>20</height>
+               </rect>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="edit_ftp_address">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="geometry">
+               <rect>
+                <x>60</x>
+                <y>190</y>
+                <width>113</width>
+                <height>20</height>
+               </rect>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="edit_https_user">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="geometry">
+               <rect>
+                <x>250</x>
+                <y>160</y>
+                <width>113</width>
+                <height>20</height>
+               </rect>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="edit_ftp_password">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="geometry">
+               <rect>
+                <x>370</x>
+                <y>190</y>
+                <width>113</width>
+                <height>20</height>
+               </rect>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="edit_ftp_user">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="geometry">
+               <rect>
+                <x>250</x>
+                <y>190</y>
+                <width>113</width>
+                <height>20</height>
+               </rect>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="edit_https_password">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="geometry">
+               <rect>
+                <x>370</x>
+                <y>160</y>
+                <width>113</width>
+                <height>20</height>
+               </rect>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="edit_https_port">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="geometry">
+               <rect>
+                <x>180</x>
+                <y>160</y>
+                <width>61</width>
+                <height>20</height>
+               </rect>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="edit_ftp_port">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="geometry">
+               <rect>
+                <x>180</x>
+                <y>190</y>
+                <width>61</width>
+                <height>20</height>
+               </rect>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_8">
+              <property name="geometry">
+               <rect>
+                <x>80</x>
+                <y>110</y>
+                <width>47</width>
+                <height>13</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>Address</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_9">
+              <property name="geometry">
+               <rect>
+                <x>190</x>
+                <y>110</y>
+                <width>47</width>
+                <height>13</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>Port</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_10">
+              <property name="geometry">
+               <rect>
+                <x>280</x>
+                <y>110</y>
+                <width>47</width>
+                <height>13</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>Username</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_11">
+              <property name="geometry">
+               <rect>
+                <x>400</x>
+                <y>110</y>
+                <width>47</width>
+                <height>13</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>Password</string>
+              </property>
+             </widget>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="settings_src.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>rbtn_manual_proxy</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>edit_ftp_address</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>236</x>
+     <y>179</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>277</x>
+     <y>290</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>rbtn_manual_proxy</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>edit_ftp_password</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>236</x>
+     <y>179</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>587</x>
+     <y>290</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>rbtn_manual_proxy</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>edit_ftp_port</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>236</x>
+     <y>179</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>371</x>
+     <y>290</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>rbtn_manual_proxy</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>edit_ftp_user</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>236</x>
+     <y>179</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>467</x>
+     <y>290</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>rbtn_manual_proxy</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>edit_http_address</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>236</x>
+     <y>179</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>277</x>
+     <y>230</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>rbtn_manual_proxy</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>edit_http_password</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>236</x>
+     <y>179</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>587</x>
+     <y>230</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>rbtn_manual_proxy</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>edit_http_port</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>236</x>
+     <y>179</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>371</x>
+     <y>230</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>rbtn_manual_proxy</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>edit_http_user</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>236</x>
+     <y>179</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>467</x>
+     <y>230</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>rbtn_manual_proxy</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>edit_https_address</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>236</x>
+     <y>179</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>277</x>
+     <y>260</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>rbtn_manual_proxy</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>edit_https_port</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>236</x>
+     <y>179</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>371</x>
+     <y>260</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>rbtn_manual_proxy</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>edit_https_password</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>236</x>
+     <y>179</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>587</x>
+     <y>260</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>rbtn_manual_proxy</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>edit_https_user</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>236</x>
+     <y>179</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>467</x>
+     <y>260</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

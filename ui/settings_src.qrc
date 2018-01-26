@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="imgs">
+    <file>imgs/del_red.png</file>
+    <file>imgs/minus_red.png</file>
+    <file>imgs/add_green.png</file>
+    <file>imgs/add.png</file>
+    <file>imgs/add_s.png</file>
+  </qresource>
+</RCC>

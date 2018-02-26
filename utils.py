@@ -1,26 +1,20 @@
-## import
-from fake_useragent import UserAgent
+import threading
+import math
+import re
 import os
 
-# for requests_retry_session()
-import requests,time
-from requests.adapters import HTTPAdapter
-from requests.packages.urllib3.util.retry import Retry
-
-# for get_fileprotocol() method
-import re
-
-# for extract url ish
-from file import *
-import rfc6266
-import math
-import threading
-
-
-# for Qt utilities
 from PyQt5.QtWidgets import *
 from PyQt5.QtGui import *
 from PyQt5.QtCore import Qt, QMimeData, pyqtSignal, QSize, QItemSelection, QThread, QSettings
+
+import requests,time
+from requests.adapters import HTTPAdapter
+from requests.packages.urllib3.util.retry import Retry
+from fake_useragent import UserAgent
+import rfc6266
+
+
+from file import *
 
 
 '''
@@ -28,17 +22,34 @@ Module contains the following
 
 ## Classes
 1. InvalidProtocolException
+2. ExtractInfoThread
 
 
 ##functions
 
-1. extract_filename
-2. read_in_chunks
-3. append_files
-4. get_random_user_agent
-5. requests_retry_session
-6. get_fileprotocol
+ 1. extract_filename
+ 2. read_in_chunks
+ 3. append_files
+ 4. get_random_user_agent
+ 5. requests_retry_session
+ 6. get_fileprotocol
+ 7. extract_downloadinfo
+ 8. validate_uri
+ 9. check_if_file_exists
+10. format_size
+11. format_speed
+12. getWidgetByObjectName
+13. extract_basename
+14. format_name
+15. format_string
+16. http_proxies
+17. format_time
 '''
+
+class InvalidProtocolException(Exception):
+	"""Raised when an invalid URI is passed in"""
+	pass
+
 
 def extract_filename(url):
 		'''
@@ -132,9 +143,8 @@ def requests_retry_session( retries=4, backoff_factor=0.3, status_forcelist=(500
 	session.mount('https://', adapter)
 	return session
 
-class InvalidProtocolException(Exception):
-	"""Raised when an invalid URI is passed in"""
-	pass
+
+
 		
 def get_fileprotocol(word):
 	pattern = re.compile(r'^(\w+)://')
@@ -170,6 +180,8 @@ def extract_downloadinfo(url):
 	else:
 		print(protocol, 'not supported yet!')
 		return None
+
+
 
 class ExtractInfoThread(QThread):
 	done_ = pyqtSignal(File)
@@ -211,6 +223,7 @@ class ExtractInfoThread(QThread):
 			print(protocol, 'not supported yet!')
 			return None
 
+
 def validate_uri(uri):
 	''' checks if uri passed in is valid '''
 
@@ -245,6 +258,7 @@ def check_if_file_exists(filename):
 	except Exception as e:
 		size = 0
 		return size
+
 
 def format_size(size):
 	''' converts size (in bytes) to human friendly string '''
